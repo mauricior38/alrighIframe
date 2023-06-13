@@ -15,8 +15,9 @@ export default class VideoJs extends Component {
     const videoJsOptions = {
        controls: true,
        preload: "auto",
+       autoplay: true,
        loop: true,
-       poster: "//url-to-poster-image.jpg",
+       poster: "https://w0.peakpx.com/wallpaper/387/706/HD-wallpaper-bgmi-thumbnail-ideas-in-2022-computer-gaming-room-thumbnail-design-for-mobile.jpg",
        sources: [{
         src: "https://vod.alright.com.br:443/LiveApp/streams/750459046800055853340794.m3u8", type: "application/x-mpegURL"
        }]
@@ -41,7 +42,7 @@ export default class VideoJs extends Component {
 
     // Initialize Nuevo plugin
 	
-    this.player.nuevo( nuevoOptions );
+    // this.player.nuevo( nuevoOptions );
 	
     // Define Google Ima Ads Tag
 
