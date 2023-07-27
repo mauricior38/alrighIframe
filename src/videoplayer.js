@@ -15,13 +15,13 @@ export default class VideoJs extends Component {
     const videoJsOptions = {
        controls: true,
        preload: "auto",
-       poster: "https://w0.peakpx.com/wallpaper/387/706/HD-wallpaper-bgmi-thumbnail-ideas-in-2022-computer-gaming-room-thumbnail-design-for-mobile.jpg",
+       autoplay: true,
        sources: [{
-        src: "https://vod.alright.com.br:443/LiveApp/streams/750459046800055853340794.m3u8", type: "application/x-mpegURL"
+        src: "https://vod.alright.com.br:5443/LiveApp/streams/363816522126514901430226_360p.m3u", type: "application/x-mpegURL"
        }]
     };
 
-    // initialize Video.js
+
 	
     this.player = videojs(
        this.videoNode,
@@ -44,7 +44,7 @@ export default class VideoJs extends Component {
 	
     // Define Google Ima Ads Tag
 
-    this.player.ima({adTagUrl: "http://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/ad_rule_samples&ciu_szs=300x250&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&cust_params=sample_ar%3Dpremidpostpod%26deployment%3Dgmf-js&cmsid=496&vid=short_onecue&correlator="});
+    // this.player.ima({adTagUrl: "https://pubads.g.doubleclick.net/gampad/ads?iu=/21775744923/external/single_preroll_skippable&sz=640x480&ciu_szs=300x250%2C728x90&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator="});
 
 }
 
