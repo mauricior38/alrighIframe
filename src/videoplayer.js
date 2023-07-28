@@ -13,7 +13,7 @@ export default class VideoJs extends Component {
     // video properties
 
     const videoJsOptions = {
-      //  controls: true,
+       controls: false,
        preload: "auto",
        autoplay: true,
        loop: true,
@@ -32,21 +32,6 @@ export default class VideoJs extends Component {
            console.log("Player ready.");
        }
     );
-
-    // Nuevo plugin options
-	
-    const nuevoOptions = {
-       logo: "//url-to-logo-image.png",
-       logourl: "//url-to go on logo-click.com",
-    }
-
-    // Initialize Nuevo plugin
-	
-    // this.player.nuevo( nuevoOptions );
-	
-    // Define Google Ima Ads Tag
-
-    // this.player.ima({adTagUrl: "https://pubads.g.doubleclick.net/gampad/ads?iu=/21775744923/external/single_preroll_skippable&sz=640x480&ciu_szs=300x250%2C728x90&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&impl=s&correlator="});
 
 }
 
