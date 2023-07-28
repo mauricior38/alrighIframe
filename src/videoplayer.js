@@ -13,9 +13,11 @@ export default class VideoJs extends Component {
     // video properties
 
     const videoJsOptions = {
-       controls: true,
+      //  controls: true,
        preload: "auto",
        autoplay: true,
+       loop: true,
+       muted: true,
        sources: [{
         src: "https://vod.alright.com.br:5443/LiveApp/streams/363816522126514901430226_360p.m3u", type: "application/x-mpegURL"
        }]
